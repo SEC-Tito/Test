@@ -21,4 +21,23 @@ describe('HomePage', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  /*it("debería sumar dos números", () => {
+    component.add(7,5);
+    expect(component.result).toEqual(12);
+  });*/
+  it("deberia sumar dos numeros",() => {
+    expect(component.add(1,2)).toEqual(3);
+  })
+
+  it("deberia sumar dos numeros",() => {
+    expect(component.subtract(1,2)).toEqual(3);
+  })
+
+  it("deberia sumar dos numeros",() => {
+    expect(component.multiply(1,2)).toEqual(3);
+  })
+
+  it("deberia sumar dos numeros",() => {
+    expect(component.divide(1,2)).toEqual(3);
+  })
 });
